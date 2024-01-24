@@ -1,0 +1,8 @@
+<h1><%= @article.title %></h1>
+
+<p><%= @article.body %></p>
+<p><%= @article.created_at.strftime("%A, %b %d") %></p>
+<p><%= @article.updated_at.strftime("%A, %b %d") %></p>
+
+<%= link_to "Edit", edit_article_path(@article) %> |
+<%= link_to "Back", articles_path %>
